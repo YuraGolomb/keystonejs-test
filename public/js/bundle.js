@@ -28818,7 +28818,9 @@
 
 	var map = {
 		"./index": 293,
-		"./index.jsx": 293
+		"./index.jsx": 293,
+		"./testview": 296,
+		"./testview.jsx": 296
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -28851,6 +28853,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Index = function Index(props) {
+		console.log('!!!!!!!!!!!');
+		console.log(props);
 		return _react2.default.createElement(
 			_default2.default,
 			props,
@@ -29207,6 +29211,37 @@
 	// 						li= item
 	// 		else
 	// 			= message
+
+/***/ }),
+/* 296 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(234);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _default = __webpack_require__(294);
+	
+	var _default2 = _interopRequireDefault(_default);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var TestView = function TestView(props) {
+		return _react2.default.createElement(
+			_default2.default,
+			props,
+			_react2.default.createElement(
+				'div',
+				null,
+				'Hello there.'
+			)
+		);
+	};
+	
+	// React Engine needs exports, don't export default
+	module.exports = TestView;
 
 /***/ })
 /******/ ]);

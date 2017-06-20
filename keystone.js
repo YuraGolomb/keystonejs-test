@@ -19,7 +19,7 @@ var engine = renderer.server.create({
 // and documentation.
 
 keystone.init({
-	'name': 'React-example',
+	'name': 'Adviser',
 	'brand': 'React-example',
 
 	'sass': 'public',
@@ -30,9 +30,8 @@ keystone.init({
 	'view engine': 'jsx',
 	'custom engine': engine,
 	'view': renderer.expressView,
-
+	'host': '127.0.0.1',
 	'auto update': true,
-	'auth': true,
 	'user model': 'User',
 });
 
@@ -54,7 +53,7 @@ keystone.set('routes', require('./routes'));
 keystone.set('cookie secret', '123');
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	users: 'users',
+		users: 'users',
 });
 
 // Start Keystone to connect to your database and initialise the web server

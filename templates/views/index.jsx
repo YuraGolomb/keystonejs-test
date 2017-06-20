@@ -2,6 +2,8 @@ import React from 'react';
 import Default from '../layouts/default';
 
 const Index = (props) => {
+	console.log('!!!!!!!!!!!');
+	console.log(props);
 	return (
 		<Default {...props}>
 			<div className="container">
