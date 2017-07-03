@@ -5,15 +5,15 @@
 
 module.exports = (app) => {
     // setup the dev environment
-    app.use(require('webpack-dev-middleware')(compiler, {
-        noInfo: false,
-        publicPath: config.output.publicPath,
-        historyApiFallback: true,
-        stats: {
-            colors: true,
-        },
-    }));
+	app.use(require('webpack-dev-middleware')(compiler, {
+		noInfo: false,
+		publicPath: config.output.publicPath,
+		historyApiFallback: true,
+		stats: {
+			colors: true,
+		},
+	}));
 
     // because hotloading is cool
-    app.use(require('webpack-hot-middleware')(compiler));
+	app.use(require('webpack-hot-middleware')(compiler));
 };

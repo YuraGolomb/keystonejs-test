@@ -69,14 +69,14 @@ const Default = (props) => {
 										}
 										{ props.user &&
 											<li>
-												<a href='/keystone/signout'>
+												<a href='/signout'>
 													Sign Out
 												</a>
 											</li>
 										}
 										{ !props.user &&
 											<li>
-												<a href='/keystone/signin'>
+												<a href='/signin'>
 													Sign In
 												</a>
 											</li>

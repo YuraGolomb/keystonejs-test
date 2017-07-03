@@ -36,9 +36,12 @@ var routes = {
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/testview', middleware.requireUser, routes.views.testview)
+	app.get('/testview', middleware.requireUser, routes.views.testview);
+	app.all('/signin', routes.views.signin);
+	app.all('/signout', routes.api.signout);
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 	
+	//app.put('/signin', routes.api.login);
 	app.get('/users', routes.api.users);
 };

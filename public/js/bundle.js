@@ -28819,8 +28819,10 @@
 	var map = {
 		"./index": 293,
 		"./index.jsx": 293,
-		"./testview": 296,
-		"./testview.jsx": 296
+		"./signin": 296,
+		"./signin.jsx": 296,
+		"./testview": 297,
+		"./testview.jsx": 297
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -28853,7 +28855,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Index = function Index(props) {
-		console.log('!!!!!!!!!!!');
+		console.log('@@@@@@@@@@@@');
 		console.log(props);
 		return _react2.default.createElement(
 			_default2.default,
@@ -29093,7 +29095,7 @@
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '/keystone/signout' },
+												{ href: '/signout' },
 												'Sign Out'
 											)
 										),
@@ -29102,7 +29104,7 @@
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '/keystone/signin' },
+												{ href: '/signin' },
 												'Sign In'
 											)
 										)
@@ -29214,6 +29216,44 @@
 
 /***/ }),
 /* 296 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(234);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _default = __webpack_require__(294);
+	
+	var _default2 = _interopRequireDefault(_default);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var SignIn = function SignIn(props) {
+		console.log('!!!!!!!!!!');
+		console.log(props);
+		return _react2.default.createElement(
+			_default2.default,
+			props,
+			_react2.default.createElement(
+				'div',
+				{ className: 'container' },
+				_react2.default.createElement(
+					'form',
+					{ method: 'post' },
+					_react2.default.createElement('input', { name: 'signin_email', type: 'email', placeholder: 'email...' }),
+					_react2.default.createElement('input', { name: 'signin_password', type: 'password', placeholder: 'email...' }),
+					_react2.default.createElement('input', { type: 'submit' })
+				)
+			)
+		);
+	};
+	
+	module.exports = SignIn;
+
+/***/ }),
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
